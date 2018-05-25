@@ -5,7 +5,7 @@ require 'spec_helper'
 describe 'kpcli Installation' do
   describe docker_build('Dockerfile', rm: true) do
     it { should have_label 'Author' => 'Lee Myring <mail@thinkstack.io>' }
-    it { should have_label 'Description' => 'kpcli Wrapper instance' }
+    it { should have_label 'Description' => 'kpcli wrapper instance' }
     it { should have_maintainer 'Lee Myring' }
     it { should have_user 'nobody' }
 
@@ -13,10 +13,10 @@ describe 'kpcli Installation' do
     its(:os) { should eq 'linux' }
 
     describe docker_run(described_image) do
-      describe file('/src') do
-        it { should be_directory }
-      end
-
+      # describe file('/src') do
+      #   it { should be_directory }
+      # end
+      #
       # describe file('/src/requirements.txt') do
       #   it { should be_file }
       #   it { should contain 'jmespath==0.9.3' }
