@@ -41,7 +41,6 @@ build-iPhoneSimulator/
 /lib/bundler/man/
 # Bundler
 Gemfile.lock
-bin/*
 .bundle/*
 
 # for a library or gem, you might want to ignore these files since the code is
