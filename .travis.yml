@@ -1,0 +1,8 @@
+language: ruby
+
+sudo: required
+
+services: docker
+
+script: travis_retry bundle exec rspec
+
