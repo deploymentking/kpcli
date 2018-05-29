@@ -11,6 +11,9 @@ Alpine docker image to run readonly requests to kpcli in order to extract passwo
 
 <!-- toc -->
 
+- [Script Usage](#script-usage)
+  * [Example](#example)
+
 <!-- tocstop -->
 
 ## Script Usage
