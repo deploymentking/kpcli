@@ -4,8 +4,6 @@ source 'https://rubygems.org'
 
 gem 'bundler', '~> 1.16', '>= 1.16.1'
 gem 'coveralls', require: false
-gem 'docker-api', '~> 1.34', '>= 1.34.2'
-gem 'docker-compose-api', '~> 1.1', '>= 1.1.5'
 gem 'dockerspec', '~> 0.5.0'
 gem 'rake', '= 12.0.0'
 gem 'rspec', '~> 3.7'

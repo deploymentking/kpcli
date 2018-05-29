@@ -27,3 +27,8 @@ task :test do
   sh 'bundle install'
   sh 'bundle exec rspec'
 end
+
+desc 'Run example usage command'
+task :example do
+  puts `docker run --net=none --rm -v #{ENV['KPCLI_HOST_MOUNT']}:/keepassx -e FILENAME=#{ENV['KPCLI_FILENAME']} -e PASSWORD=#{ENV['KPCLI_PASSWORD']} -e ENTRY=#{ENV['KPCLI_ENTRY']} thinkstackio/kpcli:latest`
+end

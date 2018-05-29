@@ -1,3 +1,3 @@
-FROM thinkstackio/kpcli
+FROM thinkstackio/kpcli:latest
 
-COPY ./keepassx.kdbx /bin
+COPY ./keepassx.kdbx /keepassx
