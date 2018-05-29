@@ -15,8 +15,8 @@ describe 'kpcli Installation' do
 
     describe docker_build('spec/', tag: 'thinkstackio/kpcli_test') do
       docker_env = {
-        'KEEPASSX_PASSWORD' => 'password',
-        'KEEPASSX_ENTRY' => '/Root/Test\ Group/Test',
+        'PASSWORD' => 'password',
+        'ENTRY' => '/Root/Test\ Group/Test',
         'DOCKER_SPEC_KEEPALIVE' => 'true'
       }
       wait = ENV['TRAVIS'] ? 10 : 2
